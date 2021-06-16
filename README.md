@@ -7,7 +7,7 @@ This is the initial draft. It's likely to have some flaws, but it'll be improved
 #### Get all programming languages
 
 ```http
-  GET https://heroku.com/mk-hello-world-api/api
+  GET https://mk-hello-world-api.herokuapp.com/api
 ```
 Example:
 
@@ -48,7 +48,7 @@ Example:
 #### Get specific programming languages
 
 ```http
-  GET https://heroku.com/mk-hello-world-api/api?title=C
+  GET https://mk-hello-world-api.herokuapp.com/api?title=C
 ```
 
 Example:
@@ -71,7 +71,7 @@ Example:
 #### Get a group of programming languages that has same category
 
 ```http
-  GET https://heroku.com/mk-hello-world-api/api?language_short=c-like
+  GET https://mk-hello-world-api.herokuapp.com/api?language_short=c-like
 ```
 
 Example:
@@ -113,7 +113,7 @@ Example:
 #### Get the number of programming languages
 
 ```http
-  GET https://heroku.com/mk-hello-world-api/api?limit=3
+  GET https://mk-hello-world-api.herokuapp.com/api?limit=3
 ```
 
 Example:
