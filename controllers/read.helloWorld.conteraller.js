@@ -92,6 +92,7 @@ const readHelloWorld = async (req, res) => {
               res.json(formatData)
               break
           }
+          break
         }
       }
     })
