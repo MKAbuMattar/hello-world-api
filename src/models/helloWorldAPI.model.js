@@ -1,4 +1,4 @@
-class HelloWorldAPI {
+export default class HelloWorldAPI {
   constructor(data, idx) {
     this.id = `${idx}`
     this.title = data.title
@@ -8,5 +8,3 @@ class HelloWorldAPI {
     this.code = data.code
   }
 }
-
-module.exports = HelloWorldAPI

@@ -1,11 +1,8 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose'
 
 const connectDb = async (URL) => {
-
   const connectionParams = {
     useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
     useUnifiedTopology: true,
   }
 
@@ -14,14 +11,11 @@ const connectDb = async (URL) => {
     console.log('======================================')
     console.info(`Mongo DB is connected to: ${connection.connection.host}`)
     console.log('======================================')
-
   } catch (err) {
     console.log('======================================')
-    console.log('An error ocurred')
-    console.log('======================================')
-    console.log(err)
+    console.error(`An error ocurred\n\r\n\r${err}`)
     console.log('======================================')
   }
 }
 
-module.exports = connectDb
+export default connectDb

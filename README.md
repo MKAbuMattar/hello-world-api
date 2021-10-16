@@ -2,13 +2,24 @@
 
 This is the initial draft. It's likely to have some flaws, but it'll be improved to be more stable in the future.
 
+```http
+  https://mk-hello-world-api.herokuapp.com/api/v1
+
+  https://mk-hello-world-api.herokuapp.com/api/v1/random
+
+  https://mk-hello-world-api.herokuapp.com/api/v1/raw
+
+  https://mk-hello-world-api.herokuapp.com/api/v1/raw/random
+```
+
 ## API Reference
 
 #### Get all programming languages
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api
+  GET https://mk-hello-world-api.herokuapp.com/api/v1
 ```
+
 Example:
 
 ```json
@@ -43,12 +54,12 @@ Example:
 ]
 ```
 
-***
+---
 
 #### Get specific programming languages
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api?title=C
+  GET https://mk-hello-world-api.herokuapp.com/api/v1?title=C
 ```
 
 Example:
@@ -66,12 +77,12 @@ Example:
 ]
 ```
 
-***
+---
 
 #### Get programming languages have this characters init
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api?qtitle=an
+  GET https://mk-hello-world-api.herokuapp.com/api/v1?qtitle=an
 ```
 
 Example:
@@ -108,12 +119,12 @@ Example:
 ]
 ```
 
-***
+---
 
 #### Get programming languages have these characters in the first letter
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api?qAlphabet=a
+  GET https://mk-hello-world-api.herokuapp.com/api/v1?qAlphabet=a
 ```
 
 Example:
@@ -142,12 +153,12 @@ Example:
 ]
 ```
 
-***
+---
 
 #### Get a group of programming languages that has same category
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api?language_short=c-like
+  GET https://mk-hello-world-api.herokuapp.com/api/v1?language_short=c-like
 ```
 
 Example:
@@ -176,12 +187,12 @@ Example:
 ]
 ```
 
-***
+---
 
 #### Get the number of programming languages
 
 ```http
-  GET https://mk-hello-world-api.herokuapp.com/api?limit=3
+  GET https://mk-hello-world-api.herokuapp.com/api/v1?limit=3
 ```
 
 Example:
