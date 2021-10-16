@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
 
 const helloWorldSchema = new mongoose.Schema({
-
   title: {
     type: String,
     require: true,
@@ -32,8 +31,7 @@ const helloWorldSchema = new mongoose.Schema({
   code: {
     type: String,
     require: true,
-  }
-
+  },
 })
 
 module.exports = mongoose.model('HelloWorld', helloWorldSchema)

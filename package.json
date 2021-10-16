@@ -1,29 +1,35 @@
 {
-  "name": "hello-world-api",
+  "name": "mk-hello-world-api",
   "version": "1.0.0",
-  "description": "This is the initial draft. It's likely to have some flaws, but it'll be improved to be more stable in the future.",
-  "main": "server.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.13",
-    "superagent": "^6.1.0"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "npx babel src --out-file build/index.js --minified --presets @babel/preset-env"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MKAbuMattar/hello-world-api.git"
+    "url": "git+https://github.com/MKAbuMattar/mk-hello-world-api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MKAbuMattar/hello-world-api/issues"
+    "url": "https://github.com/MKAbuMattar/mk-hello-world-api/issues"
   },
-  "homepage": "https://github.com/MKAbuMattar/hello-world-api#readme"
+  "homepage": "https://github.com/MKAbuMattar/mk-hello-world-api#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7"
+  }
 }
