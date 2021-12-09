@@ -1,3 +1,6 @@
+import fs from 'fs'
+import path from 'path'
+
 import helloWorldModle from '../models/helloWorld.model'
 import helloWorldAPIModel from '../models/helloWorldAPI.model'
 
@@ -381,6 +384,36 @@ export const readHelloWorldFront = async (req, res) => {
       })
     } else {
       res.status(200).json(formatData)
+    }
+  })
+}
+
+export const out = async (req, res) => {
+  const formatData = []
+
+  helloWorldModle.find({}, (err, data) => {
+    data.sort((a, b) => {
+      return a.title.localeCompare(b.title)
+    })
+
+    data.forEach((result, idx) => {
+      formatData.push(new helloWorldAPIModel(result, idx))
+    })
+
+    if (err) {
+      res.status(401).json({
+        errors: err,
+      })
+    } else {
+      fs.writeFileSync(
+        path.resolve(__dirname, 'data.json'),
+        JSON.stringify(formatData),
+      )
+
+      res.status(200).json({
+        success: true,
+        totalCount: formatData.length,
+      })
     }
   })
 }

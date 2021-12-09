@@ -4,7 +4,7 @@ import {
   readHelloWorldRandom,
   readHelloWorldRAW,
   readHelloWorldRAWRandom,
-  readHelloWorldFront,
+  out,
 } from '../controllers/read.helloWorld.conteraller.v1'
 
 const router = express.Router()
@@ -21,6 +21,6 @@ router.get(`${API_URL[0]}`, readHelloWorld)
 router.get(`${API_URL[0]}random`, readHelloWorldRandom)
 router.get(`${API_URL[0]}raw`, readHelloWorldRAW)
 router.get(`${API_URL[0]}raw/random`, readHelloWorldRAWRandom)
-router.get(`/api`, readHelloWorldFront)
+// router.get(`${API_URL[0]}out`, out)
 
 export default router
