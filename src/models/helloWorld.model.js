@@ -1,6 +1,6 @@
-const mongoose = require('mongoose')
+import { Schema, model } from 'mongoose'
 
-const helloWorldSchema = new mongoose.Schema({
+const helloWorldSchema = new Schema({
   title: {
     type: String,
     require: true,
@@ -34,4 +34,6 @@ const helloWorldSchema = new mongoose.Schema({
   },
 })
 
-module.exports = mongoose.model('HelloWorld', helloWorldSchema)
+const helloWorldModel = model('HelloWorld', helloWorldSchema)
+
+export default helloWorldModel

@@ -1,11 +1,5 @@
 import express from 'express'
-import {
-  readHelloWorld,
-  readHelloWorldRandom,
-  readHelloWorldRAW,
-  readHelloWorldRAWRandom,
-  out,
-} from '../controllers/read.helloWorld.conteraller.v1'
+import { getHelloWorldV1, getHelloWorldRandomV1, outV1, getHelloWorldV2 } from '../controllers'
 
 const router = express.Router()
 
@@ -15,12 +9,11 @@ router.get('/', (req, res) => {
   })
 })
 
-const API_URL = [`/api/v1/`]
+const API_URL = [`/api/v1`, `/api/v2`]
 
-router.get(`${API_URL[0]}`, readHelloWorld)
-router.get(`${API_URL[0]}random`, readHelloWorldRandom)
-router.get(`${API_URL[0]}raw`, readHelloWorldRAW)
-router.get(`${API_URL[0]}raw/random`, readHelloWorldRAWRandom)
-// router.get(`${API_URL[0]}out`, out)
+router.get(`${API_URL[0]}/`, getHelloWorldV1)
+router.get(`${API_URL[0]}/random`, getHelloWorldRandomV1)
+router.get(`${API_URL[0]}/out`, outV1)
+router.get(`${API_URL[1]}/`, getHelloWorldV2)
 
 export default router
