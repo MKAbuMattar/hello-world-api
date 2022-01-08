@@ -1,35 +1,55 @@
 {
   "name": "mk-hello-world-api",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Hello, World! in All Languages Programming API, This is the initial draft. It's likely to have some flaws, but it'll be improved to be more stable in the future.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node src/index.js",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "build": "npx babel src --out-file build/index.js --minified --presets @babel/preset-env"
+    "start": "babel-node src/bin/www.js",
+    "dev": "nodemon --exec babel-node src/bin/www.js",
+    "clean": "rm -rf build",
+    "build": "npm run clean && npx babel src -d build --minified --presets @babel/preset-env",
+    "start:build": "node build/bin/www.js",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint \"src/**/*.js\" --fix",
+    "format": "prettier --check \"src/**/*.js\"",
+    "format:fix": "prettier --write \"src/**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MKAbuMattar/mk-hello-world-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohammad Abu Mattar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MKAbuMattar/mk-hello-world-api/issues"
   },
   "homepage": "https://github.com/MKAbuMattar/mk-hello-world-api#readme",
   "dependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/node": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "cookie-parser": "^1.4.6",
+    "core-js": "^3.20.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^6.1.0"
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.4",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0"
+    "@babel/cli": "^7.16.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "^14.17.0 || >=17.3.0"
   }
 }

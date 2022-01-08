@@ -7,9 +7,8 @@ This is the initial draft. It's likely to have some flaws, but it'll be improved
 
   https://mk-hello-world-api.herokuapp.com/api/v1/random
 
-  https://mk-hello-world-api.herokuapp.com/api/v1/raw
 
-  https://mk-hello-world-api.herokuapp.com/api/v1/raw/random
+  https://mk-hello-world-api.herokuapp.com/api/v2
 ```
 
 ## API Reference
