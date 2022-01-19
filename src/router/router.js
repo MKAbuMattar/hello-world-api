@@ -14,6 +14,7 @@ const API_URL = [`/api/v1`, `/api/v2`]
 router.get(`${API_URL[0]}/`, getHelloWorldV1)
 router.get(`${API_URL[0]}/random`, getHelloWorldRandomV1)
 router.get(`${API_URL[0]}/out`, outV1)
+
 router.get(`${API_URL[1]}/`, getHelloWorldV2)
 
 export default router
