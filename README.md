@@ -1,22 +1,23 @@
-# Hello World API
+# Ciatix | Hello World API
 
-This is the initial draft. It's likely to have some flaws, but it'll be improved to be more stable in the future.
+Ciatix is an All Languages Programming API for collecting Hello, World! messages. This is the first draft. It's likely to have problems, but it'll be upgraded in the future to make it more stable.
 
-```http
-  https://mk-hello-world-api.herokuapp.com/api/v1
+```
+  #API Version1
+  https://ciatix.herokuapp.com/api/v1
 
-  https://mk-hello-world-api.herokuapp.com/api/v1/random
+  https://ciatix.herokuapp.com/api/v1/random
 
-
-  https://mk-hello-world-api.herokuapp.com/api/v2
+  #API Version2
+  https://ciatix.herokuapp.com/api/v2
 ```
 
 ## API Reference
 
 #### Get all programming languages
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1
+```
+  GET https://ciatix.herokuapp.com/api/v1
 ```
 
 Example:
@@ -57,8 +58,8 @@ Example:
 
 #### Get specific programming languages
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1?title=C
+```
+  GET https://ciatix.herokuapp.com/api/v1?title=C
 ```
 
 Example:
@@ -80,8 +81,8 @@ Example:
 
 #### Get programming languages have this characters init
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1?qtitle=an
+```
+  GET https://ciatix.herokuapp.com/api/v1?qtitle=an
 ```
 
 Example:
@@ -122,8 +123,8 @@ Example:
 
 #### Get programming languages have these characters in the first letter
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1?qAlphabet=a
+```
+  GET https://ciatix.herokuapp.com/api/v1?qAlphabet=a
 ```
 
 Example:
@@ -156,8 +157,8 @@ Example:
 
 #### Get a group of programming languages that has same category
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1?language_short=c-like
+```
+  GET https://ciatix.herokuapp.com/api/v1?language_short=c-like
 ```
 
 Example:
@@ -190,8 +191,8 @@ Example:
 
 #### Get the number of programming languages
 
-```http
-  GET https://mk-hello-world-api.herokuapp.com/api/v1?limit=3
+```
+  GET https://ciatix.herokuapp.com/api/v1?limit=3
 ```
 
 Example:
