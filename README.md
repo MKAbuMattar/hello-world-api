@@ -3,15 +3,15 @@
 Ciatix is an All Languages Programming API for collecting Hello, World! messages. This is the first draft. It's likely to have problems, but it'll be upgraded in the future to make it more stable.
 
 ```
-  Old URL: https://hello-world-api.up.railway.app/api/v1
+  Old URL: https://hello-world.up.railway.app/api/v1
 
   #API Version1
-  https://hello-world-api.up.railway.app/api/v1
+  https://hello-world.up.railway.app/api/v1
 
-  https://hello-world-api.up.railway.app/api/v1/random
+  https://hello-world.up.railway.app/api/v1/random
 
   #API Version2
-  https://hello-world-api.up.railway.app/api/v2
+  https://hello-world.up.railway.app/api/v2
 ```
 
 ## API Reference
@@ -19,7 +19,7 @@ Ciatix is an All Languages Programming API for collecting Hello, World! messages
 #### Get all programming languages
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1
+  GET https://hello-world.up.railway.app/api/v1
 ```
 
 Example:
@@ -61,7 +61,7 @@ Example:
 #### Get specific programming languages
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1?title=C
+  GET https://hello-world.up.railway.app/api/v1?title=C
 ```
 
 Example:
@@ -84,7 +84,7 @@ Example:
 #### Get programming languages have this characters init
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1?qtitle=an
+  GET https://hello-world.up.railway.app/api/v1?qtitle=an
 ```
 
 Example:
@@ -126,7 +126,7 @@ Example:
 #### Get programming languages have these characters in the first letter
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1?qAlphabet=a
+  GET https://hello-world.up.railway.app/api/v1?qAlphabet=a
 ```
 
 Example:
@@ -160,7 +160,7 @@ Example:
 #### Get a group of programming languages that has same category
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1?language_short=c-like
+  GET https://hello-world.up.railway.app/api/v1?language_short=c-like
 ```
 
 Example:
@@ -194,7 +194,7 @@ Example:
 #### Get the number of programming languages
 
 ```
-  GET https://hello-world-api.up.railway.app/api/v1?limit=3
+  GET https://hello-world.up.railway.app/api/v1?limit=3
 ```
 
 Example:
