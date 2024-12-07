@@ -1,52 +1,82 @@
 {
-  "name": "hello-world-api",
+  "name": "@mkabumattar/hello-world-api",
+  "description": "Hello, World! in All Languages Programming API",
+  "type": "module",
   "version": "2.0.0",
-  "description": "Hello, World! in All Languages Programming API, This is the initial draft. It's likely to have some flaws, but it'll be improved to be more stable in the future.",
-  "main": "index.js",
-  "scripts": {
-    "start": "babel-node src/bin/www.js",
-    "dev": "nodemon --exec babel-node src/bin/www.js",
-    "clean": "rm -rf build",
-    "build": "npm run clean && npx babel src -d build --minified --presets @babel/preset-env",
-    "start:build": "node build/bin/www.js",
-    "lint": "eslint \"src/**/*.js\"",
-    "lint:fix": "eslint \"src/**/*.js\" --fix",
-    "format": "prettier --check \"src/**/*.js\"",
-    "format:fix": "prettier --write \"src/**/*.js\""
+  "license": "MIT",
+  "author": {
+    "name": "Mohammad Abu Mattar",
+    "email": "mohammad.khaled@outlook.com",
+    "url": "https://mkabumattar.github.io/"
   },
+  "homepage": "https://github.com/MKAbuMattar/hello-world-api#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MKAbuMattar/hello-world-api.git"
   },
-  "keywords": [],
-  "author": "Mohammad Abu Mattar",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/MKAbuMattar/hello-world-api/issues"
   },
-  "homepage": "https://github.com/MKAbuMattar/hello-world-api#readme",
+  "scripts": {
+    "dev": "tsx watch --ignore 'src/generated/**' --clear-screen=false src/bin/www.ts",
+    "build:api": "tsx src/scripts/tsoa.script.ts",
+    "build": "rimraf dist && tsoa spec-and-routes && tsup --tsconfig tsconfig.json",
+    "start": "node ./dist/bin/www.js",
+    "clean": "rimraf dist coverage",
+    "lint": "biome check ./src",
+    "lint:fix": "biome check ./src --fix",
+    "fmt": "biome format ./src",
+    "fmt:fix": "biome format --write ./src",
+    "test": "vitest run",
+    "test:dev": "vitest dev",
+    "test:cov": "vitest run --coverage"
+  },
   "dependencies": {
-    "@babel/core": "7.19.0",
-    "@babel/node": "7.18.10",
-    "@babel/preset-env": "7.19.0",
-    "cookie-parser": "1.4.6",
-    "core-js": "3.25.1",
+    "@tsoa/cli": "6.5.1",
+    "@tsoa/runtime": "6.5.1",
+    "compression": "1.7.5",
+    "cookie-parser": "1.4.7",
     "cors": "2.8.5",
-    "dotenv": "16.0.2",
-    "express": "4.18.1",
-    "lodash": "4.17.21",
-    "mongoose": "6.11.3",
-    "regenerator-runtime": "0.13.9"
+    "dotenv": "16.4.7",
+    "envalid": "8.0.0",
+    "express": "4.21.2",
+    "helmet": "8.0.0",
+    "http-status-codes": "2.3.0",
+    "mongoose": "8.8.4",
+    "pino": "9.5.0",
+    "pino-http": "10.3.0",
+    "pino-pretty": "13.0.0",
+    "pino-transport-rotating": "1.0.2",
+    "swagger-ui-express": "5.0.1",
+    "tsoa": "6.5.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.18.10",
-    "babel-plugin-module-resolver": "4.1.0",
-    "eslint": "8.23.1",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-import-resolver-babel-module": "5.3.1",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "prettier": "2.7.1"
-  }
+    "@biomejs/biome": "1.9.4",
+    "@types/compression": "1.7.5",
+    "@types/cookie-parser": "1.4.8",
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.0",
+    "@types/lint-staged": "13.3.0",
+    "@types/node": "22.10.1",
+    "@types/supertest": "6.0.2",
+    "@types/swagger-ui-express": "4.1.7",
+    "@vitest/coverage-v8": "2.1.8",
+    "lint-staged": "15.2.10",
+    "rimraf": "6.0.1",
+    "supertest": "7.0.0",
+    "tsup": "8.3.5",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc}": [
+      "biome check --apply --no-errors-on-unmatched"
+    ]
+  },
+  "engines": {
+    "node": ">=20.x"
+  },
+  "packageManager": "pnpm@9.15.0"
 }
