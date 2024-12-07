@@ -5,7 +5,13 @@ export class DatabaseConnector {
   #URL: string;
   #connectionParams: ConnectOptions;
 
-  constructor(URL: string, connectionParams: ConnectOptions = {}) {
+  constructor(
+    URL: string,
+    connectionParams: any = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    },
+  ) {
     this.#URL = URL;
     this.#connectionParams = connectionParams;
   }
