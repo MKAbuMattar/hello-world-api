@@ -26,12 +26,12 @@ function getEnv() {
       devDefault: testOnly('mongodb://localhost:27017/test'),
       desc: 'MongoDB connection string',
     }),
-    MONGO_MAX_LIMIT: port({
-      devDefault: testOnly(150),
+    MONGO_MAX_LIMIT: str({
+      devDefault: testOnly('150'),
       desc: 'Maximum number of documents to return in a single query',
     }),
-    MONGO_DEFAULT_LIMIT: port({
-      devDefault: testOnly(20),
+    MONGO_DEFAULT_LIMIT: str({
+      devDefault: testOnly('20'),
       desc: 'Default number of documents to return in a single query',
     }),
   });
