@@ -21,6 +21,9 @@ services:
       - HOST=${HOST}
       - CORS_WHITELIST=${CORS_WHITELIST}
       - API_KEY=${API_KEY}
+      - MONGODB_URI={MONGODB_URI}
+      - MONGO_MAX_LIMIT={MONGO_MAX_LIMIT}
+      - MONGO_DEFAULT_LIMIT={MONGO_DEFAULT_LIMIT}
 
 networks:
   express-boilerplate:

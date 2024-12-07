@@ -59,6 +59,9 @@ importers:
       tsoa:
         specifier: 6.5.1
         version: 6.5.1
+      typescript:
+        specifier: 5.7.2
+        version: 5.7.2
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -105,9 +108,6 @@ importers:
       tsx:
         specifier: 4.19.2
         version: 4.19.2
-      typescript:
-        specifier: 5.7.2
-        version: 5.7.2
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.1))
