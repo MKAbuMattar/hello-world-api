@@ -106,17 +106,7 @@
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "@mkabumattar/hello-world-api",
-		"version": "2.0.0",
-		"description": "Hello, World! in All Languages Programming API",
-		"license": {
-			"name": "MIT"
-		},
-		"contact": {
-			"name": "Mohammad Abu Mattar",
-			"email": "mohammad.khaled@outlook.com",
-			"url": "https://mkabumattar.github.io/"
-		}
+		"title": ""
 	},
 	"paths": {
 		"/v1": {
@@ -199,5 +189,9 @@
 		{
 			"url": "/api"
 		}
-	]
+	],
+	"basePath": "/api/",
+	"outputDirectory": "src/generated/",
+	"specFileBaseName": "swagger",
+	"specVersion": 3
 }
