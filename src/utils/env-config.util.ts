@@ -34,6 +34,10 @@ function getEnv() {
       devDefault: testOnly('20'),
       desc: 'Default number of documents to return in a single query',
     }),
+    HEALTH_CHECK_PATH: str({
+      devDefault: testOnly('/api/health'),
+      desc: 'Path for health check endpoint',
+    }),
   });
 }
 
