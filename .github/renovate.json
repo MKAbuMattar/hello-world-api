@@ -6,6 +6,7 @@
   "lockFileMaintenance": {
     "enabled": true
   },
+  "ignorePaths": ["tmp/**"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
