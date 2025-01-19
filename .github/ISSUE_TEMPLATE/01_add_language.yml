@@ -1,0 +1,31 @@
+name: 📎 Add New Language
+description: Request to add a new language to the Hello, World! API.
+title: "📎 <TITLE> "
+labels: ["new language"]
+body:
+  - type: textarea
+    id: language
+    attributes:
+      label: Language
+      description: The language you want to add
+    validations:
+      required: true
+  - type: textarea
+    id: code_snippet
+    attributes:
+      label: Code Snippet
+      description: The code snippet you want to add
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A summary of the language
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: The author of the language
