@@ -42,8 +42,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       mongoose:
-        specifier: 8.10.1
-        version: 8.10.1
+        specifier: 8.10.2
+        version: 8.10.2
       node-cron:
         specifier: 3.0.3
         version: 3.0.3
@@ -112,8 +112,8 @@ importers:
         specifier: 7.0.0
         version: 7.0.0
       tsup:
-        specifier: 8.3.6
-        version: 8.3.6(postcss@8.5.3)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
+        specifier: 8.4.0
+        version: 8.4.0(postcss@8.5.3)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0)
       tsx:
         specifier: 4.19.3
         version: 4.19.3
@@ -1573,8 +1573,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@8.10.1:
-    resolution: {integrity: sha512-5beTeBZnJNndRXU9rxPol0JmTWZMAtgkPbooROkGilswvrZALDERY4cJrGZmgGwDS9dl0mxiB7si+Mv9Yms2fg==}
+  mongoose@8.10.2:
+    resolution: {integrity: sha512-DvqfK1s/JLwP39ogXULC8ygNDdmDber5ZbxZzELYtkzl9VGJ3K5T2MCLdpTs9I9J6DnkDyIHJwt7IOyMxh/Adw==}
     engines: {node: '>=16.20.1'}
 
   mpath@0.9.0:
@@ -2064,8 +2064,8 @@ packages:
     engines: {node: '>=18.0.0', yarn: '>=1.9.4'}
     hasBin: true
 
-  tsup@8.3.6:
-    resolution: {integrity: sha512-XkVtlDV/58S9Ye0JxUUTcrQk4S+EqlOHKzg6Roa62rdjL1nGWNUstG0xgI4vanHdfIpjP448J8vlN0oK6XOJ5g==}
+  tsup@8.4.0:
+    resolution: {integrity: sha512-b+eZbPCjz10fRryaAA7C8xlIHnf8VnsaRqydheLIqwG/Mcpfk8Z5zp3HayX7GaTygkigHl5cBUs+IhcySiIexQ==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -3015,9 +3015,9 @@ snapshots:
 
   bson@6.10.3: {}
 
-  bundle-require@5.1.0(esbuild@0.24.2):
+  bundle-require@5.1.0(esbuild@0.25.0):
     dependencies:
-      esbuild: 0.24.2
+      esbuild: 0.25.0
       load-tsconfig: 0.2.5
 
   bytes@3.1.2: {}
@@ -3660,7 +3660,7 @@ snapshots:
       bson: 6.10.3
       mongodb-connection-string-url: 3.0.2
 
-  mongoose@8.10.1:
+  mongoose@8.10.2:
     dependencies:
       bson: 6.10.3
       kareem: 2.6.3
@@ -4175,14 +4175,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  tsup@8.3.6(postcss@8.5.3)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0):
+  tsup@8.4.0(postcss@8.5.3)(tsx@4.19.3)(typescript@5.7.3)(yaml@2.7.0):
     dependencies:
-      bundle-require: 5.1.0(esbuild@0.24.2)
+      bundle-require: 5.1.0(esbuild@0.25.0)
       cac: 6.7.14
       chokidar: 4.0.3
       consola: 3.4.0
       debug: 4.4.0
-      esbuild: 0.24.2
+      esbuild: 0.25.0
       joycon: 3.1.1
       picocolors: 1.1.1
       postcss-load-config: 6.0.1(postcss@8.5.3)(tsx@4.19.3)(yaml@2.7.0)
