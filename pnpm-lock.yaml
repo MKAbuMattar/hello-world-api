@@ -45,8 +45,8 @@ importers:
         specifier: 8.14.2
         version: 8.14.2
       node-cron:
-        specifier: 3.0.3
-        version: 3.0.3
+        specifier: 4.0.0
+        version: 4.0.0
       pino:
         specifier: 9.6.0
         version: 9.6.0
@@ -1496,8 +1496,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  node-cron@3.0.3:
-    resolution: {integrity: sha512-dOal67//nohNgYWb+nWmg5dkFdIwDm8EpeGYMekPMrngV3637lqnX0lbUcCtgibHTz6SEz7DAIjKvKDFYCnO1A==}
+  node-cron@4.0.0:
+    resolution: {integrity: sha512-xMWGvrhVhBjwyAn5vJVhztG1+wkk7JANHOMI1nSZnwaokD+eslmokJ9aJEzBJgLs0jnyUbRQE6ztdY/vKNM2MQ==}
     engines: {node: '>=6.0.0'}
 
   object-assign@4.1.1:
@@ -2011,10 +2011,6 @@ packages:
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  uuid@8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
 
   validator@13.15.0:
     resolution: {integrity: sha512-36B2ryl4+oL5QxZ3AzD0t5SsMNGvTtQHpjgFO5tbNxfXbMFkY822ktCDe1MnlqV3301QQI9SLHDNJokDI+Z9pA==}
@@ -3569,9 +3565,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  node-cron@3.0.3:
-    dependencies:
-      uuid: 8.3.2
+  node-cron@4.0.0: {}
 
   object-assign@4.1.1: {}
 
@@ -4129,8 +4123,6 @@ snapshots:
   unpipe@1.0.0: {}
 
   utils-merge@1.0.1: {}
-
-  uuid@8.3.2: {}
 
   validator@13.15.0: {}
 
