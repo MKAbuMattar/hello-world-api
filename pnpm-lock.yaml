@@ -45,8 +45,8 @@ importers:
         specifier: 8.16.0
         version: 8.16.0
       node-cron:
-        specifier: 4.1.0
-        version: 4.1.0
+        specifier: 4.1.1
+        version: 4.1.1
       pino:
         specifier: 9.7.0
         version: 9.7.0
@@ -1536,8 +1536,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  node-cron@4.1.0:
-    resolution: {integrity: sha512-OS+3ORu+h03/haS6Di8Qr7CrVs4YaKZZOynZwQpyPZDnR3tqRbwJmuP2gVR16JfhLgyNlloAV1VTrrWlRogCFA==}
+  node-cron@4.1.1:
+    resolution: {integrity: sha512-oJj9CYV7teeCVs+y2Efi5IQ4FGmAYbsXQOehc1AGLlwteec8pC7DjBCUzSyRQ0LYa+CRCgmD+vtlWQcnPpXowA==}
     engines: {node: '>=6.0.0'}
 
   object-assign@4.1.1:
@@ -3671,7 +3671,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  node-cron@4.1.0: {}
+  node-cron@4.1.1: {}
 
   object-assign@4.1.1: {}
 
