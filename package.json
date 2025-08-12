@@ -69,7 +69,7 @@
     "rimraf": "6.0.1",
     "supertest": "7.1.4",
     "tsup": "8.5.0",
-    "tsx": "4.20.3",
+    "tsx": "4.20.4",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.2.4"
   },
