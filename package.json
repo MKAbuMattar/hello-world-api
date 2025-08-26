@@ -24,7 +24,7 @@
     "start": "node ./dist/bin/www.js",
     "clean": "rimraf dist coverage",
     "lint": "biome check ./src",
-    "lint:fix": "biome check ./src --fix",
+    "lint:fix": "biome check --fix ./src",
     "fmt": "biome format ./src",
     "fmt:fix": "biome format --write ./src",
     "test": "vitest run",
