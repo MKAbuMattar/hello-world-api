@@ -1,5 +1,5 @@
-import type {HelloWorldDocument} from '@/api/hello-world/hello-world.document';
 import {Schema, SchemaTypes} from 'mongoose';
+import type {HelloWorldDocument} from '@/api/hello-world/hello-world.document';
 
 export class HelloWorldSchema extends Schema<HelloWorldDocument> {
   #schema: Schema;

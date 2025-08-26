@@ -1,9 +1,3 @@
-import type {IHelloWorldResponse} from '@/api/hello-world/hello-world.model';
-import {HelloWorldService} from '@/api/hello-world/hello-world.service';
-import {logger} from '@/libs/logger.lib';
-import {ServiceResponse} from '@/models/service-response.model';
-import {env} from '@/utils/env-config.util';
-import type {PaginationParamsType} from '@/utils/pagination-params.util';
 import {
   Controller,
   Get,
@@ -13,6 +7,12 @@ import {
   Tags,
 } from '@tsoa/runtime';
 import {StatusCodes} from 'http-status-codes';
+import type {IHelloWorldResponse} from '@/api/hello-world/hello-world.model';
+import {HelloWorldService} from '@/api/hello-world/hello-world.service';
+import {logger} from '@/libs/logger.lib';
+import {ServiceResponse} from '@/models/service-response.model';
+import {env} from '@/utils/env-config.util';
+import type {PaginationParamsType} from '@/utils/pagination-params.util';
 
 @Route('v1')
 @Tags('Hello World')

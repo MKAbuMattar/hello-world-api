@@ -1,3 +1,11 @@
+import axios from 'axios';
+import compression from 'compression';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express, {type Express, type Request, type Response} from 'express';
+import helmet from 'helmet';
+import cron from 'node-cron';
+import swaggerUi from 'swagger-ui-express';
 import {DatabaseConnector} from '@/configs/database-connector.config';
 import {RegisterRoutes} from '@/generated/routes';
 import {logger} from '@/libs/logger.lib';
@@ -8,14 +16,6 @@ import {
 import requestLogger from '@/middlewares/request-logger.middleware';
 import buildApiSpecAndRoutes from '@/scripts/tsoa.script';
 import {env} from '@/utils/env-config.util';
-import axios from 'axios';
-import compression from 'compression';
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
-import express, {type Express, type Request, type Response} from 'express';
-import helmet from 'helmet';
-import cron from 'node-cron';
-import swaggerUi from 'swagger-ui-express';
 
 new DatabaseConnector(env.MONGODB_URI).connect();
 

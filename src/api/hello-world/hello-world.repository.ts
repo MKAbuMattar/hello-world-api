@@ -1,3 +1,4 @@
+import type {Model} from 'mongoose';
 import type {HelloWorldDocument} from '@/api/hello-world/hello-world.document';
 import {HelloWorldModel} from '@/api/hello-world/hello-world.model';
 import type {HelloWorldRepositoryResponse} from '@/api/hello-world/hello-world.types';
@@ -6,7 +7,6 @@ import {
   type PaginationParamsType,
 } from '@/utils/pagination-params.util';
 import {Utilities} from '@/utils/utilities.util';
-import type {Model} from 'mongoose';
 
 export class HelloWorldRepository {
   #Utilities: Utilities;

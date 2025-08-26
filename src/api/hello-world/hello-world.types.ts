@@ -1,5 +1,3 @@
-import type {HelloWorldDocument} from '@/api/hello-world/hello-world.document';
-
 export interface HelloWorldRepositoryResponse {
   count: number;
   totalCount: number;

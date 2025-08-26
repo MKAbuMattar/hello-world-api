@@ -1,5 +1,5 @@
-import {logger} from '@/libs/logger.lib';
 import mongoose, {type ConnectOptions} from 'mongoose';
+import {logger} from '@/libs/logger.lib';
 
 export class DatabaseConnector {
   #URL: string;
