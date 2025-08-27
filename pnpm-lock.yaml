@@ -58,7 +58,7 @@ importers:
         version: 13.1.1
       pino-transport-rotating-file:
         specifier: 1.0.2
-        version: 1.0.2(pino-pretty@13.1.1)(pino@9.9.0)(rotating-file-stream@3.2.6)
+        version: 1.0.2(pino-pretty@13.1.1)(pino@9.9.0)(rotating-file-stream@3.2.7)
       swagger-ui-express:
         specifier: 5.0.1
         version: 5.0.1(express@5.1.0)
@@ -1745,8 +1745,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  rotating-file-stream@3.2.6:
-    resolution: {integrity: sha512-r8yShzMWUvWXkRzbOXDM1fEaMpc3qo2PzK7bBH/0p0Nl/uz8Mud/Y+0XTQxe3kbSnDF7qBH2tSe83WDKA7o3ww==}
+  rotating-file-stream@3.2.7:
+    resolution: {integrity: sha512-SVquhBEVvRFY+nWLUc791Y0MIlyZrEClRZwZFLLRgJKldHyV1z4e2e/dp9LPqCS3AM//uq/c3PnOFgjqnm5P+A==}
     engines: {node: '>=14.0'}
 
   router@2.2.0:
@@ -3749,11 +3749,11 @@ snapshots:
 
   pino-std-serializers@7.0.0: {}
 
-  pino-transport-rotating-file@1.0.2(pino-pretty@13.1.1)(pino@9.9.0)(rotating-file-stream@3.2.6):
+  pino-transport-rotating-file@1.0.2(pino-pretty@13.1.1)(pino@9.9.0)(rotating-file-stream@3.2.7):
     dependencies:
       pino: 9.9.0
       pino-pretty: 13.1.1
-      rotating-file-stream: 3.2.6
+      rotating-file-stream: 3.2.7
 
   pino@9.9.0:
     dependencies:
@@ -3883,7 +3883,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.48.1
       fsevents: 2.3.3
 
-  rotating-file-stream@3.2.6: {}
+  rotating-file-stream@3.2.7: {}
 
   router@2.2.0:
     dependencies:
