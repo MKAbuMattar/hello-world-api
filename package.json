@@ -54,7 +54,7 @@
     "typescript": "5.9.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.2",
+    "@biomejs/biome": "2.2.3",
     "@types/compression": "1.8.1",
     "@types/cookie-parser": "1.4.9",
     "@types/cors": "2.8.19",
