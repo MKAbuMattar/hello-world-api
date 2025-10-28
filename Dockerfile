@@ -1,4 +1,4 @@
-FROM node:jod-alpine@sha256:bd26af08779f746650d95a2e4d653b0fd3c8030c44284b6b98d701c9b5eb66b9 AS base
+FROM node:^24.0.0-alpine@sha256:775ba24d35a13e74dedce1d2af4ad510337b68d8e22be89e0ce2ccc299329083 AS base
 
 # Install pnpm
 RUN npm install -g pnpm@latest
