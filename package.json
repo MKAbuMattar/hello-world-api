@@ -68,7 +68,7 @@
     "lint-staged": "16.2.6",
     "rimraf": "6.1.0",
     "supertest": "7.1.4",
-    "tsup": "8.5.0",
+    "tsup": "8.5.1",
     "tsx": "4.20.6",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "4.0.8"
@@ -81,5 +81,5 @@
   "engines": {
     "node": ">=20.x"
   },
-  "packageManager": "pnpm@10.21.0"
+  "packageManager": "pnpm@10.22.0"
 }
