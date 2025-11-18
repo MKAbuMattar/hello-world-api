@@ -64,14 +64,14 @@
     "@types/node-cron": "3.0.11",
     "@types/supertest": "6.0.3",
     "@types/swagger-ui-express": "4.1.8",
-    "@vitest/coverage-v8": "4.0.9",
+    "@vitest/coverage-v8": "4.0.10",
     "lint-staged": "16.2.6",
     "rimraf": "6.1.0",
     "supertest": "7.1.4",
     "tsup": "8.5.1",
     "tsx": "4.20.6",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "4.0.9"
+    "vitest": "4.0.10"
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,json,jsonc}": [
