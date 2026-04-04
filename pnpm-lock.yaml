@@ -42,8 +42,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       mongoose:
-        specifier: 9.3.3
-        version: 9.3.3
+        specifier: 9.4.1
+        version: 9.4.1
       node-cron:
         specifier: 4.2.1
         version: 4.2.1
@@ -1671,8 +1671,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@9.3.3:
-    resolution: {integrity: sha512-sfv5LOIPWeN5o/281kp4Rx9ZnuXb0g8CtvBTi7trYQs2PYYx8LWXegXxG3ar7VEns1o+d4h9LI/Dtc7dTTyYmA==}
+  mongoose@9.4.1:
+    resolution: {integrity: sha512-4rFBWa+/wdBQSfvnOPJBpiSG6UCEbhSQh865dEdaH9Y8WfHBUC+I2XT28dp0IBIGrEwmh+gzrgZgea5PbmrHWA==}
     engines: {node: '>=20.19.0'}
 
   mpath@0.9.0:
@@ -3851,7 +3851,7 @@ snapshots:
       bson: 7.2.0
       mongodb-connection-string-url: 7.0.1
 
-  mongoose@9.3.3:
+  mongoose@9.4.1:
     dependencies:
       kareem: 3.2.0
       mongodb: 7.1.1
