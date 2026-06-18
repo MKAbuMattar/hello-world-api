@@ -42,11 +42,11 @@ importers:
         specifier: 2.3.0
         version: 2.3.0
       mongoose:
-        specifier: 9.7.0
-        version: 9.7.0
+        specifier: 9.7.1
+        version: 9.7.1
       node-cron:
-        specifier: 4.2.1
-        version: 4.2.1
+        specifier: 4.4.1
+        version: 4.4.1
       pino:
         specifier: 10.3.1
         version: 10.3.1
@@ -1848,8 +1848,8 @@ packages:
       socks:
         optional: true
 
-  mongoose@9.7.0:
-    resolution: {integrity: sha512-pkrLZ6U41pD4Ai0ju/FYL7o5I5k+rV3RZINQTG937hbhnLGKRuqqYm1Dlt/kTQ+M4FHijzV6JawzsdHKRGt7QA==}
+  mongoose@9.7.1:
+    resolution: {integrity: sha512-rOCVA9ufRSdGTG6IdSqJa30avbaSBlI98zkv76xB+5xAzwCn4qvuKi26iE2BeAZrYYqcagjJRjmTA7+qEbSbYg==}
     engines: {node: '>=20.19.0'}
 
   mpath@0.9.0:
@@ -1889,9 +1889,9 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  node-cron@4.2.1:
-    resolution: {integrity: sha512-lgimEHPE/QDgFlywTd8yTR61ptugX3Qer29efeyWw2rv259HtGBNn1vZVmp8lB9uo9wC0t/AT4iGqXxia+CJFg==}
-    engines: {node: '>=6.0.0'}
+  node-cron@4.4.1:
+    resolution: {integrity: sha512-1e4Gku1qeKx1ywNnMoA0o5hiZ8iA4klH84TIszTHZAME68xVIjLkiBo5KrtowbcOJn8MQqJG/yWHjC/dFdMWyQ==}
+    engines: {node: '>=20'}
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -4170,7 +4170,7 @@ snapshots:
       bson: 7.2.0
       mongodb-connection-string-url: 7.0.1
 
-  mongoose@9.7.0:
+  mongoose@9.7.1:
     dependencies:
       kareem: 3.3.0
       mongodb: 7.2.0
@@ -4211,7 +4211,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  node-cron@4.2.1: {}
+  node-cron@4.4.1: {}
 
   object-assign@4.1.1: {}
 
